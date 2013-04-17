@@ -5,7 +5,7 @@
 //  Created by Vincent Tang on 13-4-15.
 //  Copyright (c) 2013年 Vincent Tang. All rights reserved.
 //
-
+#import "OpenGLView.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    OpenGLView *glview  = [[OpenGLView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:glview];
 }
 
 - (void)didReceiveMemoryWarning
